@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "setuptools_scm[toml]>=6.2"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mycronic-functionsaver"
+authors = [
+    { name = "Nicolas Guillot", email = "nicolas.guillot@mycronic.com" },
+]
+description = "Python package to save input, output and intermediate results of functions to disk. And replay them later."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "jsons==1.6.*",
+    "numpy==1.26.*",
+    "pillow==10.3.*",
+    "aiofiles==23.2.*"
+]
+dynamic = ["version"]
+
+[tool.setuptools_scm]
+version_scheme = "release-branch-semver"
+
+[project.urls]
+homepage = "https://gitlab.miclaser.net/my/as/inspection/dev/python/mycronic-functionsaver"
+documentation = "https://gitlab.miclaser.net/my/as/inspection/dev/python/mycronic-functionsaver/-/blob/master/README.md"
+repository = "https://gitlab.miclaser.net/my/as/inspection/dev/python/mycronic-functionsaver"
+changelog = "https://gitlab.miclaser.net/my/as/inspection/dev/python/mycronic-functionsaver/-/blob/master/CHANGELOG.md"

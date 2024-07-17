@@ -1,0 +1,18 @@
+[packages]
+jsons = "==1.6.*"
+orjson = "==3.10.*"
+numpy = "==1.26.*"
+pillow = "==10.3.*"
+aiofiles = "==23.2.*"
+
+[dev-packages]
+pytest = "*"
+pytest-asyncio = "==0.23.*"
+pytest-cov = "*"
+build = "*"
+setuptools = "*"
+setuptools_scm = "*"
+black = "*"
+
+[requires]
+python_version = ">=3.11"
